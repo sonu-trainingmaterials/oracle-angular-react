@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="4278d70cb14303bd79a4f3a6990c323ea4bf500c" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Link text for home hyperlink</note>
+        <note priority="1" from="meaning">Menu text</note>
+      </trans-unit>
+      <trans-unit id="492980edb1daf211381a8b73c808e1997f568ad6" datatype="html">
+        <source>New Profile</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">Link text for create profile hyperlink</note>
+        <note priority="1" from="meaning">Menu text</note>
+      </trans-unit>
+      <trans-unit id="5348aa1b9670865ac6e4e5420a66da25b70b5aa9" datatype="html">
+        <source>About</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">Link text for about hyperlink</note>
+        <note priority="1" from="meaning">Menu text</note>
+      </trans-unit>
+      <trans-unit id="c4c20285f6bee99c22f2cd00571a556274a45c80" datatype="html">
+        <source>Profiles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/home/home.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Profiles list page header</note>
+        <note priority="1" from="meaning">Page Header</note>
+      </trans-unit>
+      <trans-unit id="954e51560ae9f26f1e300873372ddc7c3dd5dd82" datatype="html">
+        <source>About Page</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">Header of the About page</note>
+        <note priority="1" from="meaning">Page Header</note>
+      </trans-unit>
+      <trans-unit id="2a25ab53cc7c7d6bfb4bb05494d4f36fdf048f90" datatype="html">
+        <source>This is about page</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/about/about.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Description in the about page</note>
+      </trans-unit>
+      <trans-unit id="e068fc7352244366653b010918a6de89dc34d1b1" datatype="html">
+        <source>Edit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/card/card.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">Link text for edit hyperlink</note>
+        <note priority="1" from="meaning">Edit link text</note>
+      </trans-unit>
+      <trans-unit id="2a9c28e67f74e128be676a7dfae88720a299cec1" datatype="html">
+        <source>Create Profile</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">Header of the Create profile page</note>
+        <note priority="1" from="meaning">Page Header</note>
+      </trans-unit>
+      <trans-unit id="3d503bf89a9caf072a1b306ac34848da2e99080f" datatype="html">
+        <source>Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <note priority="1" from="description"> Label text for name control</note>
+        <note priority="1" from="meaning">Control label text</note>
+      </trans-unit>
+      <trans-unit id="c9c60ecba30eac3e81d2787d02057a8f8c9c77b1" datatype="html">
+        <source>Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">Label text for email control</note>
+        <note priority="1" from="meaning">Control label text</note>
+      </trans-unit>
+      <trans-unit id="51557c3a370ca1d22930a29c642f4cbef6d02d26" datatype="html">
+        <source>Photo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">Label text for photo control</note>
+        <note priority="1" from="meaning">Control label text</note>
+      </trans-unit>
+      <trans-unit id="e9e0adc9cbc74e8cc7ca0065aa7ac3ff7c52032f" datatype="html">
+        <source>Sex</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">Label text for sex control</note>
+        <note priority="1" from="meaning">Control label text</note>
+      </trans-unit>
+      <trans-unit id="b071a68236798aac393a5b3e6adca3f242192650" datatype="html">
+        <source>Birthday</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">Label text for birthdate control</note>
+        <note priority="1" from="meaning">Control label text</note>
+      </trans-unit>
+      <trans-unit id="15ee68811cc3bf31960bce34e63523def2c15007" datatype="html">
+        <source>Phone</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <note priority="1" from="description">Label text for phonenumber control</note>
+        <note priority="1" from="meaning">Control label text</note>
+      </trans-unit>
+      <trans-unit id="6f273340dbfe57d77024e29c844ff963dddad66f" datatype="html">
+        <source>Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <note priority="1" from="description">Label text for address control</note>
+        <note priority="1" from="meaning">Control label text</note>
+      </trans-unit>
+      <trans-unit id="816c495824c4585cf412e82a2c005c112734a1a9" datatype="html">
+        <source>City</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">65</context>
+        </context-group>
+        <note priority="1" from="description">Label text for city control</note>
+        <note priority="1" from="meaning">Control label text</note>
+      </trans-unit>
+      <trans-unit id="da397daa6b9001d593a20f60229394022941e020" datatype="html">
+        <source>Country</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <note priority="1" from="description">Label text for country control</note>
+        <note priority="1" from="meaning">Control label text</note>
+      </trans-unit>
+      <trans-unit id="b9156da0024f5e1d0f2acf91069cdc5101125ddc" datatype="html">
+        <source>Save</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">83</context>
+        </context-group>
+        <note priority="1" from="description">Save button text for create profile form</note>
+        <note priority="1" from="meaning">Submit button text</note>
+      </trans-unit>
+      <trans-unit id="3d5117c90e8f87b1efed0eed3f444885f6ffab4d" datatype="html">
+        <source>Name cannot be empty</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Required validation error message</note>
+        <note priority="1" from="meaning">Validation error</note>
+      </trans-unit>
+      <trans-unit id="3d5ba37657895399b1358371e368dcec0cfafa86" datatype="html">
+        <source>Minimum 3 characters required</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">Minlength validation error message</note>
+        <note priority="1" from="meaning">Validation error</note>
+      </trans-unit>
+      <trans-unit id="d06b669b7f628f8b00b00987e473e4f41fb3d5c3" datatype="html">
+        <source>Email cannot be empty</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">Required validation error message</note>
+        <note priority="1" from="meaning">Validation error</note>
+      </trans-unit>
+      <trans-unit id="fd5762f912eaa1c0e8e2ec22eca31a6197c497ba" datatype="html">
+        <source>Invalid email format</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <note priority="1" from="description">Email format validation error message</note>
+        <note priority="1" from="meaning">Validation error</note>
+      </trans-unit>
+      <trans-unit id="bb7f41b70a1c5ad3ffb4336358853f64fcd67452" datatype="html">
+        <source>Sex cannot be empty</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+        <note priority="1" from="description">Required validation error message</note>
+        <note priority="1" from="meaning">Validation error</note>
+      </trans-unit>
+      <trans-unit id="ec185cdb78ed1b5a521a074eff4b2022f30f160b" datatype="html">
+        <source>Birth date cannot be empty</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <note priority="1" from="description">Required validation error message</note>
+        <note priority="1" from="meaning">Validation error</note>
+      </trans-unit>
+      <trans-unit id="6083a495571f8f7b50cc49c04771094c59a18283" datatype="html">
+        <source>Phone number cannot be empty</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <note priority="1" from="description">Required validation error message</note>
+        <note priority="1" from="meaning">Validation error</note>
+      </trans-unit>
+      <trans-unit id="c4acd767f41b51bbff3487281e147651bce89ec9" datatype="html">
+        <source>Address cannot be empty</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <note priority="1" from="description">Required validation error message</note>
+        <note priority="1" from="meaning">Validation error</note>
+      </trans-unit>
+      <trans-unit id="b5f682700703a493d216cb66c15fdc5b941392c1" datatype="html">
+        <source>City cannot be empty</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+        <note priority="1" from="description">Required validation error message</note>
+        <note priority="1" from="meaning">Validation error</note>
+      </trans-unit>
+      <trans-unit id="cccd43ab04d8161dbf4f6495968ff324e79dc2e7" datatype="html">
+        <source>Country cannot be empty</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/add-profile/add-profile.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <note priority="1" from="description">Required validation error message</note>
+        <note priority="1" from="meaning">Validation error</note>
+      </trans-unit>
+      <trans-unit id="5d2bb1e4e6e9d7adeb470def45cbab6522b4177b" datatype="html">
+        <source>Update</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/edit-profile/edit-profile.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <note priority="1" from="description">Save button text for update profile form</note>
+        <note priority="1" from="meaning">Submit button text</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

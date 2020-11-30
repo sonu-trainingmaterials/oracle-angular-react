@@ -1,0 +1,177 @@
+
+ReactJS
+------------
+Library vs Framework
+	- Library is a set of reusable functions. 
+	- No strict design patterns followed. 
+	- Framework includes language, compiler and other tools for building and deploying the application.
+	- Better to develop end-to-end apps.
+	- Follows design patterns
+	
+Frontend app development
+	- ReactJS (Library)
+		- Performance is better
+		- Used for Data driven apps ,eg: Dashboard, games etc
+		- Lightweight
+	- Angular (Framework) 
+		- using typescript - Compiled language.
+		- Strict design patterns.
+		- Builtin Dependency Injection, 
+		- Two-way binding
+		- Builtin form validation support
+		- Heavy compared to ReactJS
+	- EmberJS
+	- VueJS
+	
+Creating React Apps
+	- CLI tool is 'create-react-app'.
+	- Install the CLI : npm install -g create-react-app
+	- Create first project: 
+		mkdir demos
+		cd demos
+		create-react-app profile-manager
+		
+JSX
+	- It is the combination of JS and HTML
+	- Uses the HTML syntax and can use the JS variables inside the JSX 
+	- Every React component is returning the JSX code that is later rendered as pure HTML code 
+
+React Component
+	- A UI element in react.
+	- Component can be created as function or class 
+		- Function component 
+			- return the JSX directly
+			- Stateless components
+		- class component
+			- inherits from React.Component base class.
+			- the render method of the component class returns the JSX
+			- Stateful components 
+
+Conditional Rendering
+	syntax: (condition) && element
+	syntax: (condition)? element:else_element
+
+Class components vs Function components
+
+	1) Function compoents with function keyword
+	2) Arrow functions
+	3) Inline Arraow function
+
+Controlled vs uncontrolled  Forms
+	1) Controlled components use state and event handlers to do data binding
+		Real-time validation
+	2) Uncontrolled components uses the ref objects to access the DOM elements
+		No real-time validation.
+		
+	
+LifeCycle methods
+	- Some special functions that executes automatically when the component is rendered, mounted, destroyed or the binding props changes.
+	
+React.Fragment
+	- A special component used to encapsulate the JSX elements without adding aditional elements in the DOM tree.
+	import React, { Fragment } from 'react';
+	
+	<Fragment>
+            <div className="row">
+                <div className="col-md-12">
+                    <h2>About</h2>
+                </div>
+            </div>
+            <div>
+                <p>Created by Sonu Sathyadas</p>
+            </div>
+    </Fragment>
+	
+Higher Order Components (HOC)
+	- A function that accepts a component as argument and returns another component.
+	- Used to reuse the components by adding features to it.
+	
+PureComponent
+	- Component Life cycle methods 
+		- static getDerivedStateFromProps(props, state)
+		- componentWillMount() 
+		- componentDidMount()
+		- componentWillReceiveProps()
+		- shouldComponentUpdate(nextProps, nextState) 
+		- getSnapshotBeforeUpdate(prevProps, prevState)
+		- componentDidUpdate()
+		- componentWillUnmount()
+	- A pure component implements a shallow copy of the shouldComponentUpdate() method and does not allow user to define the method. It decides whether to render the component or not based on the props.
+	- Used to reduce the number of rendering of a component. 
+	
+React Hooks
+	- Are special function that can be used to add/bring features to components.
+	- useState() - add state feature to a function component
+		const [count, setCount] = useState(0);
+		const [name, setName] = useState('Sonu');
+	- useHistory()
+		- is used to add history object to the function component, history object can be used to redirect to another page.
+			import {useHistory} from 'react-router-dom';			
+			const history = useHistory();
+			history.push('/profiles/new');
+	- useContext()
+		- create and use a context api object.
+	- useEffect()
+		- Execute the side effect methods like componentDidMount and componentDidUpdate in function components.
+	- useRef
+		- controlled components - > state, event handlers
+		- uncontrolled components - > ref variables ( React.createRef())
+			instead of React.createRef() use useRef()
+	- useMemo
+		- memorize the results of a function. Executes a function when any of the dependencies is modified
+			useMemo(function, [dependencies])
+			eg: let data = useMemo(()=>calculateData(), [a,b,c])
+			<div>{data}</div>
+			
+- React.Lazy()
+	- Load the react components lazily.
+	- Better to improve the initial loading performance of the application.
+	- A fallback component/jsx can be placed untill the component gets loaded.
+- React.memo()
+	- Used to create pure components while implementing function components.
+	- React.memo only checks for prop changes. 
+	- If your function component wrapped in React.memo has a useState or useContext Hook in its implementation, it will still rerender when state or context change.
+	
+Redux
+	- Redux is a state container for JS applications.
+	- 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+

@@ -1,0 +1,97 @@
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <h2>Update Profile</h2>
+        <form #frm="ngForm" (ngSubmit)="update(frm)">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for name control">Name</label>
+                    <input type="text" class="form-control" name="name" required minlength="3"
+                        [(ngModel)]="profile.name" #name="ngModel" />
+                    <div *ngIf="name.errors && name.touched" class="text-danger">
+                        <div *ngIf="name.errors.required" i18n="Validation error|Required validation error message">Name cannot be empty</div>
+                        <div *ngIf="name.errors.minlength" i18n="Validation error|Minlength validation error message">Minimum 3 characters required</div>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for email control">Email</label>
+                    <input type="email" name="email" class="form-control" required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" [(ngModel)]="profile.email"
+                        #email="ngModel" />
+                        <div *ngIf="email.errors && email.touched">
+                            <div class="text-danger" *ngIf="email.errors.required" i18n="Validation error|Required validation error message">Email cannot be empty</div>
+                            <div class="text-danger" *ngIf="email.errors.pattern" i18n="Validation error|Email format validation error message">Invalid email format</div>
+                        </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for photo control">Photo</label>
+                    <input type="text" class="form-control" name="photo" [(ngModel)]="profile.photo" #photo="ngModel" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for sex control">Sex</label>
+                    <select name="sex" class="form-control" id="" required [(ngModel)]="profile.sex" #sex="ngModel">
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                    <div *ngIf="sex.errors && sex.touched">
+                        <div class="text-danger" *ngIf="sex.errors.required" i18n="Validation error|Required validation error message">Sex cannot be empty</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for birthdate control">Birthday</label>
+                    <input type="date" name="birthdate" class="form-control" required 
+                        [ngModel] ="profile.birthdate | date:'yyyy-MM-dd'" 
+                        (ngModelChange)="profile.birthdate = $event"
+                        #bdate="ngModel" />
+                        <div *ngIf="bdate.errors && bdate.touched">
+                            <div class="text-danger" *ngIf="bdate.errors.required" i18n="Validation error|Required validation error message">Birth date cannot be empty</div>
+                        </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for phonenumber control">Phone</label>
+                    <input type="tel" name="phonenumber" class="form-control" required [(ngModel)]="profile.phonenumber"
+                        #phno="ngModel" />
+                        <div *ngIf="phno.errors && phno.touched">
+                            <div class="text-danger" *ngIf="phno.errors.required" i18n="Validation error|Required validation error message">Phone number cannot be empty</div>
+                        </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for address control">Address</label>
+                    <input type="text" name="address" class="form-control" required [(ngModel)]="profile.address"
+                        #address="ngModel" />
+                        <div *ngIf="address.errors && address.touched">
+                            <div class="text-danger" *ngIf="address.errors.required" i18n="Validation error|Required validation error message">Address cannot be empty</div>
+                        </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for city control">City</label>
+                    <input type="text" name="city" class="form-control" required [(ngModel)]="profile.city"
+                        #city="ngModel" />
+                        <div *ngIf="city.errors && city.touched">
+                            <div class="text-danger" *ngIf="city.errors.required" i18n="Validation error|Required validation error message">City cannot be empty</div>
+                        </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for country control">Country</label>
+                    <input type="text" name="country" class="form-control" required [(ngModel)]="profile.country"
+                        #country="ngModel" />
+                        <div *ngIf="country.errors && country.touched">
+                            <div class="text-danger" *ngIf="country.errors.required" i18n="Validation error|Required validation error message">Country cannot be empty</div>
+                        </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12 text-center">
+                    <button type="submit" [disabled]="frm.invalid" class="btn btn-primary" i18n="Submit button text|Save button text for update profile form">Update</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="well well-sm " [highlight]="'lightyellow'" >
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{{ profile.photo | image:profile.sex}}" alt="{{profile.name}}"
+                class="img-rounded img-responsive image-size" />
+        </div>
+        <div class="col-md-8">
+            <h4>{{ profile.name | uppercase }}
+            </h4>
+            <small>{{ profile.city }}, {{ profile.country }} </small>
+            <p>
+                {{ profile.email | lowercase }}
+                <br />
+                {{ profile.birthdate|date:'dd-MMM-yyyy'}}
+            </p>    
+            <p>
+                <a [routerLink]="['profiles','edit', profile.id]" class="btn btn-sm btn-success" i18n="Edit link text|Link text for edit hyperlink">Edit</a>
+            </p>                        
+        </div>
+    </div>
+</div>

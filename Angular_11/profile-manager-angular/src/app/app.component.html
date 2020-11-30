@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Profile Manager</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" routerLink="/" i18n="Menu text|Link text for home hyperlink">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/profiles/new" i18n="Menu text|Link text for create profile hyperlink">New Profile</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/about" i18n="Menu text|Link text for about hyperlink">About</a>
+            </li>            
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <router-outlet></router-outlet>
+</div>

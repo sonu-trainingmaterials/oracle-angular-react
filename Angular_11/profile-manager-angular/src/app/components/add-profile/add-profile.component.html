@@ -1,0 +1,88 @@
+<div class="row">
+    <div class="col-md-6 mx-auto">
+        <h2 i18n="Page Header|Header of the Create profile page">Create Profile</h2>
+
+        <form [formGroup]="frm" (ngSubmit)="save()" >
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text| Label text for name control">Name</label>
+                    <input type="text"  formControlName="name" class="form-control" name="name"/>
+                    <div *ngIf="Name.errors && Name.touched">
+                        <div class="text-danger" *ngIf="Name.errors.required" i18n="Validation error|Required validation error message">Name cannot be empty</div>
+                        <div class="text-danger" *ngIf="Name.errors.minlength" i18n="Validation error|Minlength validation error message">Minimum 3 characters required</div>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for email control">Email</label>
+                    <input type="email"  formControlName="email" name="email" class="form-control"  />
+                    <div *ngIf="Email.errors && Email.touched">
+                        <div class="text-danger" *ngIf="Email.errors.required" i18n="Validation error|Required validation error message">Email cannot be empty</div>
+                        <div class="text-danger" *ngIf="Email.errors.email" i18n="Validation error|Email format validation error message">Invalid email format</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for photo control">Photo</label>
+                    <input type="text" formControlName="photo" class="form-control" name="photo" />
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for sex control">Sex</label>
+                    <select name="sex" formControlName="sex" class="form-control" id="">
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                    <div *ngIf="Sex.errors && Sex.touched">
+                        <div class="text-danger" *ngIf="Sex.errors.required" i18n="Validation error|Required validation error message">Sex cannot be empty</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for birthdate control">Birthday</label>                                
+                    <input type="date" formControlName="birthdate" name="birthdate" class="form-control" />
+                    <div *ngIf="BirthDate.errors && BirthDate.touched">
+                        <div class="text-danger" *ngIf="BirthDate.errors.required" i18n="Validation error|Required validation error message">Birth date cannot be empty</div>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for phonenumber control">Phone</label>
+                    <input type="tel" formControlName="phonenumber" name="phonenumber" class="form-control" />
+                    <div *ngIf="Phone.errors && Phone.touched">
+                        <div class="text-danger" *ngIf="Phone.errors.required" i18n="Validation error|Required validation error message">Phone number cannot be empty</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for address control">Address</label>
+                    <input type="text" formControlName="address"  name="address" class="form-control" />
+                    <div *ngIf="Address.errors && Address.touched">
+                        <div class="text-danger" *ngIf="Address.errors.required" i18n="Validation error|Required validation error message">Address cannot be empty</div>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for city control">City</label>
+                    <input type="text" formControlName="city" name="city" class="form-control" />
+                    <div *ngIf="City.errors && City.touched">
+                        <div class="text-danger" *ngIf="City.errors.required"  i18n="Validation error|Required validation error message">City cannot be empty</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label class="col-sm-2 control-label" i18n="Control label text|Label text for country control">Country</label>
+                    <input type="text" formControlName="country" name="country" class="form-control" />
+                    <div *ngIf="Country.errors && Country.touched">
+                        <div class="text-danger" *ngIf="Country.errors.required" i18n="Validation error|Required validation error message">Country cannot be empty</div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-12 text-center">
+                    <button type="submit" [disabled]="frm.invalid" class="btn btn-primary" i18n="Submit button text|Save button text for create profile form" >Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
