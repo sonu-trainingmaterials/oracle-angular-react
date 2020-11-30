@@ -1,0 +1,53 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button>
+            <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+        <a class="nav-title" [routerLink]="['']">
+            <h1>BST Bank</h1>
+        </a>
+        <span class="menu-spacer"></span>
+        <div>
+            <a mat-button [routerLink]="'/customers/dashboard'" *ngIf="isLoggedIn"> Accounts </a>
+            <a mat-button [routerLink]="['feedback']">Feedback</a>
+            <button mat-icon-button [matMenuTriggerFor]="menu" *ngIf="isLoggedIn" aria-label="Logged in user menu">
+                <mat-icon>account_circle</mat-icon>
+            </button>
+            <mat-menu #menu="matMenu" >
+                <button mat-menu-item *ngIf="isLoggedIn && authInfo">
+                    <span>{{authInfo.firstName + ' ' + authInfo.lastName}}</span>
+                </button>
+                <button mat-menu-item>
+                    <mat-icon>settings</mat-icon>
+                    <span>Settings</span>
+                </button>
+                <button mat-menu-item (click)="logout()">
+                    <mat-icon>exit_to_app</mat-icon>
+                    <span>Logout</span>
+                </button>
+            </mat-menu>
+
+        </div>
+    </mat-toolbar-row>
+    <!-- <mat-toolbar-row>
+        <span style="font-size: 12px;">Your bank at your hand. </span>
+    </mat-toolbar-row> -->
+</mat-toolbar>
+
+
+<mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav>
+        <mat-nav-list>
+            <a mat-list-item [routerLink]="['customers', 'login']" *ngIf="!isLoggedIn"> Customer Login </a>
+            <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+        <div style="min-height: 80vh;">
+            <div class="container-fluid">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,17 @@
+<h3>Home page</h3>
+<p>Welcome <strong>{{name|titlecase}}</strong> to Home page of Angular</p>
+
+
+<ul>
+    <li *ngFor="let u of users" (click)="show(u)">{{u.name}}</li>
+</ul>
+
+<div *ngIf="user">
+    <h3>User details</h3>
+    <p>Name : <span [ngStyle]="{'color': user.gender==='M'?'green':'pink'  }"> {{user.name |uppercase}}</span></p>
+    <p>Email: {{user.email |uppercase}}</p>
+    <p>Date of Birth: {{user.dateOfBirth | date :'dd/MMM/yyyy'}}</p>
+    <p>Balance : {{user.accountBalance |currency:'INR'}}</p>
+    <p *ngIf="user.gender==='F'">You are eligible for PMAY</p>
+</div>
+

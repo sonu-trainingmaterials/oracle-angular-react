@@ -1,0 +1,44 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Ajith Kumar",
+            "email": "ajith@gmail.com",
+            "dateOfBirth": "1980-10-20T18:30:00.000Z",
+            "accountBalance": 32000,
+            "gender": "M"
+        },
+        {
+            "id": 2,
+            "name": "Sagar Jain",
+            "email": "sagar@gmail.com",
+            "dateOfBirth": "1967-06-10T18:30:00.000Z",
+            "accountBalance": 28000,
+            "gender": "M"
+        },
+        {
+            "id": 3,
+            "name": "Mahesh Shinde",
+            "email": "maheshshinde@gmail.com",
+            "dateOfBirth": "1976-12-12T18:30:00.000Z",
+            "accountBalance": 65000,
+            "gender": "M"
+        },
+        {
+            "id": 4,
+            "name": "Ajay Khankhoje",
+            "email": "ajay@gmail.com",
+            "dateOfBirth": "1982-10-21T18:30:00.000Z",
+            "accountBalance": 54000,
+            "gender": "M"
+        },
+        {
+            "id": 5,
+            "name": "Ashvini Shahane",
+            "email": "ashvini@gmail.com",
+            "dateOfBirth": "1989-10-20T18:30:00.000Z",
+            "accountBalance": 12000,
+            "gender": "F"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+<mat-card>
+    <mat-card-header>
+        <!-- <div mat-card-avatar class="example-header-image"></div> -->
+        <mat-card-title>Accounts</mat-card-title>
+        <!-- <mat-card-subtitle></mat-card-subtitle> -->
+    </mat-card-header>
+    <mat-card-content>
+        <table mat-table [dataSource]="accounts" class="mat-elevation-z8">
+            <!-- AccountNo Column -->
+            <ng-container matColumnDef="accountNo">
+                <th mat-header-cell *matHeaderCellDef> Account No </th>
+                <td mat-cell *matCellDef="let account">
+                    <a class="mat-cell-link" [routerLink]="['/customer/accounts/', account.accountNo]"> {{account.accountNo}}</a>
+                </td>
+            </ng-container>
+
+            <!-- Amount Column -->
+            <ng-container matColumnDef="amount">
+                <th mat-header-cell *matHeaderCellDef> Balance </th>
+                <td mat-cell *matCellDef="let account"> {{account.amount|currency}} </td>
+            </ng-container>
+
+            <!-- Account Type Column -->
+            <ng-container matColumnDef="accountType">
+                <th mat-header-cell *matHeaderCellDef> Account Type </th>
+                <td mat-cell *matCellDef="let account"> {{account.accountType | accountType}} </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </mat-card-content>
+</mat-card>

@@ -1,0 +1,17 @@
+table {
+    width: 100%;
+}
+
+mat-card {
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+.mat-cell-link{
+    text-decoration: none;
+    color:dimgray;
+}
+
+.mat-cell-link:hover{
+    text-decoration: underline;
+}
